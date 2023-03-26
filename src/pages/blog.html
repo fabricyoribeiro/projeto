@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../dist/output.css" />
+  <link rel="stylesheet" href="/src/styles/nav.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
+    rel="stylesheet"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+  <style>
+    @media (min-width: 768px) {
+      .container{
+        padding-left: 80px;
+        padding-right: 80px;
+        margin: auto;
+      }
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body class="font-poppins">
+  <nav>
+    <div
+      class="w-full max-w-6xl mx-auto flex justify-between items-center py-3 px-4 text-lg max-md:flex-col max-md:h-full max-md:justify-between"
+    >
+
+    <a class="max-md:hidden" href="./index.html">Fulana da Silva</a>
+
+      <div class="flex justify-between items-center max-md:w-[90vw] md:hidden">
+        <a href="./index.html">Fulana da Silva</a>
+        <button onclick="openMenu()" class="md:hidden"><i class=" fa fa-bars" style="font-size:32px"></i></button>
+      </div>
+      <div id="links" class="flex gap-6 max-md:hidden ">
+        <a href="./index.html">Início</a>
+        <a href="./src/pages/about.html">Sobre nós</a>
+        <a href="./src/pages/contact.html">Contato</a>
+        <a href="./src/pages/blog.html">Blog</a>
+      </div>
+
+    </div>
+  </nav>
+  <div id="menu-expanded" class="hidden fixed py-3 bg-[#2d3047] text-white top-0 w-screen h-screen  justify-between items-center flex-col">
+    <div class="flex justify-between items-center max-md:w-[90vw] md:hidden">
+      <a class="text-xl" href="./index.html">Fulana da Silva</a>
+      <button onclick="closeMenu()" class="md:hidden"><i class=" fa fa-close" style="font-size:32px"></i></button>
+    </div>
+
+    <div id="links" class="flex flex-col text-center gap-6 text-2xl font-bold">
+      <a href="./src/pages/#">Início</a>
+      <a href="./src/pages/about.html">Sobre nós</a>
+      <a href="./src/pages/contact.html">Contato</a>
+      <a href="./src/pages/blog.html">Blog</a>
+    </div>
+
+    <ul class="flex gap-5">
+      <li>
+        <a href="https://facebook.com" target="_blank">
+          <i class="fa fa-facebook-f" style="font-size: 32px"></i>
+        </a>
+      <li>
+        <a href="https://instagram.com" target="_blank">
+          <i class="fa fa-instagram" style="font-size: 32px"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com" target="_blank">
+          <i class="fa fa-linkedin" style="font-size: 32px"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class='sk-ww-medium-publication-feed ' data-embed-id='125513'></div>
+  </div>
+  <footer class="bg-[#2d3047] text-gray-200">
+    <div
+      class="px-4 py-8 flex flex-wrap max-md:flex-col justify-center gap-8"
+    >
+      <div class="flex gap-5 max-md:mx-auto">
+        <div class="w-[100px] h-[100px] bg-slate-400"></div>
+        <div class="list-none">
+          <h1 class="text-base mb-1 font-bold text-gray-200">
+            ARQUITETURA E URBANISMO
+          </h1>
+          <h3 class="text-sm">Arquitetura e urbanismo</h3>
+          <h3 class="text-sm">Arquitetura e urbanismo</h3>
+          <h3 class="text-sm">Arquitetura e urbanismo</h3>
+          <hr class="h-[2px] bg-slate-400 my-2" />
+          <ul class="flex flex-wrap gap-3">
+            <li class="text-sm">
+              <a href="">
+                <span>Início</span>
+              </a>
+            </li>
+            <li class="text-sm">
+              <a href="">
+                <span>Sobre nós</span>
+              </a>
+            </li>
+            <li class="text-sm">
+              <a href="">
+                <span>Contato</span>
+              </a>
+            </li>
+            <li class="text-sm">
+              <a href="">
+                <span>Início</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="bg-white h-[2px]" />
+
+      <div class="h-full flex flex-col max-md:text-center gap-2">
+        <div class="flex flex-col gap-2">
+          <span class="text-base font-bold text-gray-200">
+            SIGA-NOS NAS REDES SOCIAIS
+          </span>
+          <div class="flex gap-3 max-md:justify-center">
+            <a href="https://facebook.com" target="_blank">
+              <i class="fa fa-facebook-f" style="font-size:24px"></i>
+
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="fa fa-instagram" style="font-size:24px"></i>
+
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+              <i class="fa fa-linkedin" style="font-size:24px"></i>
+
+            </a>
+          </div>
+        </div>
+
+        <hr class="bg-white h-[1px]" />
+
+        <div class="flex flex-col gap-2">
+          <span class="text-base font-bold text-gray-200">VISITE-NOS</span>
+          <p class="flex items-center text-sm gap-1 max-md:mx-auto">
+            <House size="{22}" /> Meu endereço aqui
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-sm py-4">
+      <span>Aruitetura e Urbanismo©</span>
+    </div>
+  </footer>
+  <script src='https://widgets.sociablekit.com/medium-publication-feed/widget.js' async defer></script>
+  <script src="../../main.js">
+  </script>
+</body>
+</html>

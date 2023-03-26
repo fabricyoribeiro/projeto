@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="/src/styles/nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body class="font-poppins">
+    <nav>
+      <div
+        class="w-full max-w-6xl mx-auto flex justify-between items-center py-3 px-4 text-lg max-md:flex-col max-md:h-full max-md:justify-between"
+      >
+
+        <a class="max-md:hidden" href="./index.html">Fulana da Silva</a>
+
+        <div class="flex justify-between items-center max-md:w-[90vw] md:hidden">
+          <a href="./index.html">Fulana da Silva</a>
+          <button onclick="openMenu()" class="md:hidden"><i class=" fa fa-bars" style="font-size:32px"></i></button>
+        </div>
+        <div id="links" class="flex gap-6 max-md:hidden ">
+          <a href="./index.html">Início</a>
+          <a href="./src/pages/about.html">Sobre nós</a>
+          <a href="./src/pages/contact.html">Contato</a>
+          <a href="./src/pages/blog.html">Blog</a>
+        </div>
+
+      </div>
+    </nav>
+    <div id="menu-expanded" class="hidden fixed py-3 bg-[#2d3047] text-white top-0 w-screen h-screen  justify-between items-center flex-col">
+      <div class="flex justify-between items-center max-md:w-[90vw] md:hidden">
+        <a class="text-xl" href="./index.html">Fulana da Silva</a>
+        <button onclick="closeMenu()" class="md:hidden"><i class=" fa fa-close" style="font-size:32px"></i></button>
+      </div>
+
+      <div id="links" class="flex flex-col text-center gap-6 text-2xl font-bold">
+        <a href="./src/pages/#">Início</a>
+        <a href="./src/pages/about.html">Sobre nós</a>
+        <a href="./src/pages/contact.html">Contato</a>
+        <a href="./src/pages/blog.html">Blog</a>
+      </div>
+
+      <ul class="flex gap-5">
+        <li>
+          <a href="https://facebook.com" target="_blank">
+            <i class="fa fa-facebook-f" style="font-size: 32px"></i>
+          </a>
+        <li>
+          <a href="https://instagram.com" target="_blank">
+            <i class="fa fa-instagram" style="font-size: 32px"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com" target="_blank">
+            <i class="fa fa-linkedin" style="font-size: 32px"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="bg-[url('/public/images/interior4.jpg')] max-sm:bg-[url('../../public/images/interior-mobile.jpg')] bg-cover w-full max-w-full h-[93vh]"
+    >
+      <div
+        class="bg-gradient-to-r from-[#4e4d4d4c] to-[#4e4c4c52] w-full h-full flex items-center justify-center text-center text-[#ecebeb] px-5"
+      >
+        <div class="animate-top w-full max-w-6xl flex flex-col gap-5">
+          <h2 class="text-5xl font-bold max-sm:text-4xl">
+            ARQUITETURA E DESIGN DE INTERIORES
+          </h2>
+          <p class="text-2xl max-sm:text-xl">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />{'
+            '} Eum hic asperiores ame
+          </p>
+          <div class="flex justify-center gap-10 mt-5">
+            <svg
+              class="w-10 float-animation animation-delay-meio"
+              fill="#f4f1f1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M352 96c0 14.3-3.1 27.9-8.8 40.2L396 227.4c-23.7 25.3-54.2 44.1-88.5 53.6L256 192h0 0l-68 117.5c21.5 6.8 44.3 10.5 68.1 10.5c70.7 0 133.8-32.7 174.9-84c11.1-13.8 31.2-16 45-5s16 31.2 5 45C428.1 341.8 347 384 256 384c-35.4 0-69.4-6.4-100.7-18.1L98.7 463.7C94 471.8 87 478.4 78.6 482.6L23.2 510.3c-5 2.5-10.9 2.2-15.6-.7S0 501.5 0 496V440.6c0-8.4 2.2-16.7 6.5-24.1l60-103.7C53.7 301.6 41.8 289.3 31.2 276c-11.1-13.8-8.8-33.9 5-45s33.9-8.8 45 5c5.7 7.1 11.8 13.8 18.2 20.1l69.4-119.9c-5.6-12.2-8.8-25.8-8.8-40.2c0-53 43-96 96-96s96 43 96 96zm21 297.9c32.6-12.8 62.5-30.8 88.9-52.9l43.7 75.5c4.2 7.3 6.5 15.6 6.5 24.1V496c0 5.5-2.9 10.7-7.6 13.6s-10.6 3.2-15.6 .7l-55.4-27.7c-8.4-4.2-15.4-10.8-20.1-18.9L373 393.9zM256 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
+              />
+            </svg>
+            <svg
+              class="w-10 float-animation animation-delay-dois"
+              fill="#f4f1f1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+            >
+              <path
+                d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM96 64H288c17.7 0 32 14.3 32 32v32c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32zm32 160a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM96 352a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM64 416c0-17.7 14.3-32 32-32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM192 256a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zm64-64a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM288 448a32 32 0 1 1 0-64 32 32 0 1 1 0 64z"
+              />
+            </svg>
+            <svg
+              class="w-10 float-animation animation-delay-um"
+              fill="#f4f1f1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M469.3 19.3l23.4 23.4c25 25 25 65.5 0 90.5l-56.4 56.4L322.3 75.7l56.4-56.4c25-25 65.5-25 90.5 0zM44.9 353.2L299.7 98.3 413.7 212.3 158.8 467.1c-6.7 6.7-15.1 11.6-24.2 14.2l-104 29.7c-8.4 2.4-17.4 .1-23.6-6.1s-8.5-15.2-6.1-23.6l29.7-104c2.6-9.2 7.5-17.5 14.2-24.2zM249.4 103.4L103.4 249.4 16 161.9c-18.7-18.7-18.7-49.1 0-67.9L94.1 16c18.7-18.7 49.1-18.7 67.9 0l19.8 19.8c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1l45.1 45.1zM408.6 262.6l45.1 45.1c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1L496 350.1c18.7 18.7 18.7 49.1 0 67.9L417.9 496c-18.7 18.7-49.1 18.7-67.9 0l-87.4-87.4L408.6 262.6z"
+              />
+            </svg>
+          </div>
+          <a href="">
+            <button
+              class="bg-[#ffc526] w-fit mx-auto mt-9 my-4 p-3 text-xl font-bold rounded text-[#2d3047] hover:scale-110 transition-all duration-500 shadow-[#00000082] shadow-lg"
+            >
+              <a href="src/pages/contact.html">Fale conosco</a>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="h-48 text-center flex flex-col justify-center px-5">
+      <p class="font-cursiva text-4xl max-sm:text-3xl">
+        Arquitetura é um estado de espírito e não uma profissão.
+      </p>
+      <span class="italic max-sm:mt-4">Le Corbusier</span>
+    </section>
+
+    <section class="w-full md:py-24 md:px-5 bg-[#e9e2e3] max-md:pb-12">
+      <div
+        class="grid grid-cols-2 gap-16 w-full max-w-6xl mx-auto max-md:grid-cols-1 max-md:gap-2"
+      >
+        <div class="md:rounded-tl-[50px] md:rounded-br-[50px] overflow-hidden">
+          <img
+            src="public/images/criatividade2.jpg"
+            alt="imagem de mesa com papeis"
+            srcset=""
+          />
+        </div>
+        <div class="flex flex-col px-5">
+          <h1 class="mb-8 mt-16 text-3xl font-bold max-md:mt-8 max-md:mb-3">
+            CRIATIVIDADE
+          </h1>
+          <p class="text-xl max-md:text-xl font-light">
+            Capacidade de criar soluções inovadoras e visualmente atraentes para
+            problemas de design.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full md:py-24 md:px-5 max-md:pb-12">
+      <div
+        class="grid grid-cols-2 gap-16 w-full max-w-6xl mx-auto max-md:grid-cols-1 max-md:flex max-md:flex-col-reverse max-md:gap-2 max-md:mt-16"
+      >
+        <div class="flex flex-col px-5">
+          <h1 class="mb-8 mt-16 text-3xl font-bold max-md:mt-8 max-md:mb-3">
+            GERENCIAMENTO
+          </h1>
+          <p class="text-xl max-md:text-xl font-light">
+            Habilidades de gerenciamento de projetos para gerenciar e
+            supervisionar a construção de projetos de arquitetura.
+          </p>
+        </div>
+        <div class="md:rounded-tr-[50px] md:rounded-bl-[50px] overflow-hidden">
+          <img src="public/images/gerenciamento.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full md:py-24 md:px-5 bg-[#e9e2e3] max-md:pb-12">
+      <div
+        class="grid grid-cols-2 gap-16 w-full max-w-6xl mx-auto max-md:grid-cols-1 max-md:gap-2"
+      >
+        <div class="md:rounded-tl-[50px] md:rounded-br-[50px] overflow-hidden">
+          <img src="public/images/seguranca.jpg" alt="" />
+        </div>
+        <div class="flex flex-col px-5">
+          <h1 class="mb-8 mt-16 text-3xl font-bold max-md:mt-8 max-md:mb-3">
+            SEGURANÇA
+          </h1>
+          <p class="text-xl font-light max-md:text-xl">
+            A segurança é um aspecto crucial na arquitetura, pois ela não apenas
+            protege o patrimônio e as pessoas que o utilizam, mas também promove
+            a confiança e a qualidade de vida na sociedade como um todo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#2d3047] text-gray-200">
+      <div
+        class="px-4 py-8 flex flex-wrap max-md:flex-col justify-center gap-8"
+      >
+        <div class="flex gap-5 max-md:mx-auto">
+          <div class="w-[100px] h-[100px] bg-slate-400"></div>
+          <div class="list-none">
+            <h1 class="text-base mb-1 font-bold text-gray-200">
+              ARQUITETURA E URBANISMO
+            </h1>
+            <h3 class="text-sm">Arquitetura e urbanismo</h3>
+            <h3 class="text-sm">Arquitetura e urbanismo</h3>
+            <h3 class="text-sm">Arquitetura e urbanismo</h3>
+            <hr class="h-[2px] bg-slate-400 my-2" />
+            <ul class="flex flex-wrap gap-3">
+              <li class="text-sm">
+                <a href="">
+                  <span>Início</span>
+                </a>
+              </li>
+              <li class="text-sm">
+                <a href="">
+                  <span>Sobre nós</span>
+                </a>
+              </li>
+              <li class="text-sm">
+                <a href="">
+                  <span>Contato</span>
+                </a>
+              </li>
+              <li class="text-sm">
+                <a href="">
+                  <span>Início</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="bg-white h-[2px]" />
+
+        <div class="h-full flex flex-col max-md:text-center gap-2">
+          <div class="flex flex-col gap-2">
+            <span class="text-base font-bold text-gray-200">
+              SIGA-NOS NAS REDES SOCIAIS
+            </span>
+            <div class="flex gap-3 max-md:justify-center">
+              <a href="https://facebook.com" target="_blank">
+                <i class="fa fa-facebook-f" style="font-size:24px"></i>
+
+              </a>
+              <a href="https://instagram.com" target="_blank">
+                <i class="fa fa-instagram" style="font-size:24px"></i>
+
+              </a>
+              <a href="https://linkedin.com" target="_blank">
+                <i class="fa fa-linkedin" style="font-size:24px"></i>
+
+              </a>
+            </div>
+          </div>
+
+          <hr class="bg-white h-[1px]" />
+
+          <div class="flex flex-col gap-2">
+            <span class="text-base font-bold text-gray-200">VISITE-NOS</span>
+            <p class="flex items-center text-sm gap-1 max-md:mx-auto">
+              <House size="{22}" /> Meu endereço aqui
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-sm py-4">
+        <span>Aruitetura e Urbanismo©</span>
+      </div>
+    </footer>
+    <script src="main.js">
+    </script>
+  </body>
+</html>
