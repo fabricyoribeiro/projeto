@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../dist/output.css" />
     <link rel="stylesheet" href="/src/styles/nav.css">
+    <link rel="stylesheet" href="/src/styles/animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,30 +24,30 @@
       <div
         class="w-full max-w-6xl mx-auto flex justify-between items-center py-3 px-4 text-lg max-md:flex-col max-md:h-full max-md:justify-between"
       >
-        <a class="max-md:hidden" href="./index.html">Fulana da Silva</a>
+        <a class="max-md:hidden" href="../../index.html">Fulana da Silva</a>
 
         <div
           class="flex justify-between items-center max-md:w-[90vw] md:hidden"
         >
-          <a href="./index.html">Fulana da Silva</a>
+          <a href="../../index.html">Fulana da Silva</a>
           <button onclick="openMenu()" class="md:hidden">
             <i class="fa fa-bars" style="font-size: 32px"></i>
           </button>
         </div>
         <div id="links" class="flex gap-6 max-md:hidden">
-          <a href="./index.html">Início</a>
-          <a href="./src/pages/about.html">Sobre nós</a>
-          <a href="./src/pages/contact.html">Contato</a>
-          <a href="./src/pages/blog.html">Blog</a>
+          <a href="../../index.html">Início</a>
+          <a href="about.html">Sobre nós</a>
+          <a href="#">Contato</a>
+          <a href="blog.html">Blog</a>
         </div>
       </div>
     </nav>
     <div
       id="menu-expanded"
-      class="hidden fixed py-3 bg-[#2d3047] text-white top-0 w-screen h-screen justify-between items-center flex-col"
+      class="animate-menu hidden fixed py-3 bg-[#2d3047] text-white top-0 w-screen h-screen justify-between items-center flex-col"
     >
       <div class="flex justify-between items-center max-md:w-[90vw] md:hidden">
-        <a class="text-xl" href="./index.html">Fulana da Silva</a>
+        <a class="text-xl" href="../../index.html">Fulana da Silva</a>
         <button onclick="closeMenu()" class="md:hidden">
           <i class="fa fa-close" style="font-size: 32px"></i>
         </button>
@@ -56,10 +57,10 @@
         id="links"
         class="flex flex-col text-center gap-6 text-2xl font-bold"
       >
-        <a href="./src/pages/#">Início</a>
-        <a href="./src/pages/about.html">Sobre nós</a>
-        <a href="./src/pages/contact.html">Contato</a>
-        <a href="./src/pages/blog.html">Blog</a>
+        <a href="../../index.html">Início</a>
+        <a href="about.html">Sobre nós</a>
+        <a href="#">Contato</a>
+        <a href="blog.html">Blog</a>
       </div>
 
       <ul class="flex gap-5">

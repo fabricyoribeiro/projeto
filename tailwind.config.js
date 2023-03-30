@@ -8,8 +8,7 @@ module.exports = {
         cursiva: 'Dancing Script, cursive',
       }
     },
-    'nav-stile':
-      'max-md:h-screen max-md:w-screen max-md:overflow-hidden max-md:fixed max-md:bg-[#2d3047]'
+   
   },
   plugins: []
 }

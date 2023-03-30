@@ -645,6 +645,10 @@ video {
   isolation: auto;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .float-right {
   float: right;
 }
@@ -1873,8 +1877,8 @@ video {
   background-image: url('../../public/images/background-contact-mobile.jpg');
 }
 
-.bg-\[url\(\'\/public\/images\/interior4\.jpg\'\)\] {
-  background-image: url('/public/images/interior4.jpg');
+.bg-\[url\(\'\/public\/images\/interior\.jpg\'\)\] {
+  background-image: url('/public/images/interior.jpg');
 }
 
 .bg-gradient-to-r {
@@ -2695,10 +2699,6 @@ video {
 }
 
 @media not all and (min-width: 768px) {
-  .max-md\:fixed {
-    position: fixed;
-  }
-
   .max-md\:-left-\[5\%\] {
     left: -5%;
   }
@@ -2732,16 +2732,8 @@ video {
     height: 100%;
   }
 
-  .max-md\:h-screen {
-    height: 100vh;
-  }
-
   .max-md\:w-\[90vw\] {
     width: 90vw;
-  }
-
-  .max-md\:w-screen {
-    width: 100vw;
   }
 
   .max-md\:grid-cols-1 {
@@ -2766,15 +2758,6 @@ video {
 
   .max-md\:gap-2 {
     gap: 0.5rem;
-  }
-
-  .max-md\:overflow-hidden {
-    overflow: hidden;
-  }
-
-  .max-md\:bg-\[\#2d3047\] {
-    --tw-bg-opacity: 1;
-    background-color: rgb(45 48 71 / var(--tw-bg-opacity));
   }
 
   .max-md\:bg-white {

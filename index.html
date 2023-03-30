@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./dist/output.css" />
     <link rel="stylesheet" href="/src/styles/nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="src/styles/animations.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
@@ -22,7 +23,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Document</title>
+    <title>Arquitetura e design de interiores</title>
   </head>
   <body class="font-poppins">
     <nav>
@@ -30,14 +31,14 @@
         class="w-full max-w-6xl mx-auto flex justify-between items-center py-3 px-4 text-lg max-md:flex-col max-md:h-full max-md:justify-between"
       >
 
-        <a class="max-md:hidden" href="./index.html">Fulana da Silva</a>
+        <a class="max-md:hidden" href="#">Fulana da Silva</a>
 
         <div class="flex justify-between items-center max-md:w-[90vw] md:hidden">
-          <a href="./index.html">Fulana da Silva</a>
+          <a href="#">Fulana da Silva</a>
           <button onclick="openMenu()" class="md:hidden"><i class=" fa fa-bars" style="font-size:32px"></i></button>
         </div>
         <div id="links" class="flex gap-6 max-md:hidden ">
-          <a href="./index.html">Início</a>
+          <a href="#">Início</a>
           <a href="./src/pages/about.html">Sobre nós</a>
           <a href="./src/pages/contact.html">Contato</a>
           <a href="./src/pages/blog.html">Blog</a>
@@ -45,14 +46,14 @@
 
       </div>
     </nav>
-    <div id="menu-expanded" class="hidden fixed py-3 bg-[#2d3047] text-white top-0 w-screen h-screen  justify-between items-center flex-col">
+    <div id="menu-expanded" class="animate-menu hidden fixed z-10 py-3 bg-[#2d3047] text-white top-0 w-screen h-screen  justify-between items-center flex-col">
       <div class="flex justify-between items-center max-md:w-[90vw] md:hidden">
-        <a class="text-xl" href="./index.html">Fulana da Silva</a>
+        <a class="text-xl" href="#">Fulana da Silva</a>
         <button onclick="closeMenu()" class="md:hidden"><i class=" fa fa-close" style="font-size:32px"></i></button>
       </div>
 
       <div id="links" class="flex flex-col text-center gap-6 text-2xl font-bold">
-        <a href="./src/pages/#">Início</a>
+        <a href="#">Início</a>
         <a href="./src/pages/about.html">Sobre nós</a>
         <a href="./src/pages/contact.html">Contato</a>
         <a href="./src/pages/blog.html">Blog</a>
@@ -76,10 +77,10 @@
       </ul>
     </div>
     <div
-      class="bg-[url('/public/images/interior4.jpg')] max-sm:bg-[url('../../public/images/interior-mobile.jpg')] bg-cover w-full max-w-full h-[93vh]"
+      class="bg-[url('/public/images/interior.jpg')] max-sm:bg-[url('../../public/images/interior-mobile.jpg')] bg-cover w-full max-w-full h-[93vh]"
     >
       <div
-        class="bg-gradient-to-r from-[#4e4d4d4c] to-[#4e4c4c52] w-full h-full flex items-center justify-center text-center text-[#ecebeb] px-5"
+        class=" bg-gradient-to-r from-[#4e4d4d4c] to-[#4e4c4c52] w-full h-full flex items-center justify-center text-center text-[#ecebeb] px-5"
       >
         <div class="animate-top w-full max-w-6xl flex flex-col gap-5">
           <h2 class="text-5xl font-bold max-sm:text-4xl">
@@ -89,7 +90,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />{'
             '} Eum hic asperiores ame
           </p>
-          <div class="flex justify-center gap-10 mt-5">
+          <div class="flex justify-center gap-10 mt-5 ">
             <svg
               class="w-10 float-animation animation-delay-meio"
               fill="#f4f1f1"
@@ -145,7 +146,7 @@
       >
         <div class="md:rounded-tl-[50px] md:rounded-br-[50px] overflow-hidden">
           <img
-            src="public/images/criatividade2.jpg"
+            src="public/images/criatividade.jpg"
             alt="imagem de mesa com papeis"
             srcset=""
           />
